@@ -238,7 +238,7 @@ func (r *PSQLTaskRepository) GetExpiredTasks() ([]Task, error) {
 func (r *PSQLTaskRepository) UpdateTask(task Task) error {
 	updateSQL := `
 	UPDATE tasks
-	   SET description = $2, completed = $3, due_date = $4, priority = $5 
+	   SET description = $2, completed = $3, priority = $4, due_date = $5 
 	 WHERE id = $1;`
 
 	_, err := r.DB.Exec(updateSQL, task.ID, task.Text, task.Completed, task.Priority, task.DueDate)

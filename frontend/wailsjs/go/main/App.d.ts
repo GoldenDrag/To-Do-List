@@ -22,6 +22,4 @@ export function GetTasksDueToday():Promise<Array<repository.Task>>;
 
 export function GetTasksDueWeek():Promise<Array<repository.Task>>;
 
-export function Greet(arg1:string):Promise<string>;
-
 export function UpdateTask(arg1:repository.Task):Promise<void>;

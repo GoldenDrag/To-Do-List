@@ -42,10 +42,6 @@ export function GetTasksDueWeek() {
   return window['go']['main']['App']['GetTasksDueWeek']();
 }
 
-export function Greet(arg1) {
-  return window['go']['main']['App']['Greet'](arg1);
-}
-
 export function UpdateTask(arg1) {
   return window['go']['main']['App']['UpdateTask'](arg1);
 }
