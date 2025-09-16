@@ -1,0 +1,155 @@
+#app {
+    height: 100vh;
+    text-align: center;
+}
+
+#logo {
+    display: block;
+    width: 25%;
+    height: 25%;
+    margin: auto;
+    padding: 10% 0 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-origin: content-box;
+}
+
+.result {
+    height: 20px;
+    line-height: 20px;
+    margin: 1.5rem auto;
+}
+
+.input {
+    margin-bottom: 10px;
+}
+
+.input-box .btn {
+    width: 60px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 3px;
+    border: none;
+    margin: 0 0 0 20px;
+    padding: 0 8px;
+    cursor: pointer;
+}
+
+.input-box .btn:hover {
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    color: #333333;
+}
+
+.input-box .input {
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    background-color: rgba(240, 240, 240, 1);
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+}
+
+.input-box .input::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+}
+
+.input-box .input:hover {
+    border: none;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.input-box .input:focus {
+    border: none;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.tasks-list {
+    width: 75%;
+    height: 50%;
+    border: #cfd9df;
+    border-radius: 3px;
+    column-gap: 6em;
+    column-rule: thin solid black;
+    margin: auto;
+    padding: 10px;
+    text-align: left;
+}
+
+.task {
+    display: flex;
+    background-color: white;
+    border-radius: 3px;
+    padding: 10px;
+    margin: 1px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.completed {
+    background-color: rgb(209, 209, 209);
+    text-decoration: line-through;
+}
+
+.property {
+    color: black;
+    margin: 3px;
+    width: 40.33%;
+    float: left;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+    overflow: hidden;
+    max-height: 30px;
+    font-size: max(13px, 13px);
+}
+
+.priority {
+    max-width: 40px;
+    text-align: center;
+    border-right: 3px solid #aaaaaa;
+    border-left: 3px solid #aaaaaa;
+}
+
+.high {
+    border-left: 10px solid red;
+}
+
+.mid {
+    border-left: 10px solid yellow;
+}
+
+.low {
+    border-left: 10px solid blue;
+}
+
+.del-btn {
+    background-color: red;
+    float: right;
+    right: 0;
+    border-radius: 3px;
+    width: 10%;
+    height: 10%;
+    text-align: center;
+    cursor: pointer;
+    margin: auto;
+}
+
+.theme-toggle {
+    position: absolute;
+    right: 0px;
+
+}
+
+.light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.dark {
+  background-color: #121212;
+  color: #ffffff;
+}
