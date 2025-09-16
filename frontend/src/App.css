@@ -52,7 +52,7 @@
     -webkit-font-smoothing: antialiased;
     display: inline-block;
 }
-
+ 
 .input-box .input::-webkit-calendar-picker-indicator {
     cursor: pointer;
 }
